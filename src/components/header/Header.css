@@ -1,0 +1,18 @@
+.headerBlock {
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+
+}
+
+h1 {
+    display: block;
+    width: fit-content;
+}
+
+h3 {
+    display: block;
+    width: fit-content;
+}
