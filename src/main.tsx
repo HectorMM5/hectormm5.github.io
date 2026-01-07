@@ -9,7 +9,6 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Topbar />
     <Header />
-    <TitleAndText />
 
   </StrictMode>,
 )
