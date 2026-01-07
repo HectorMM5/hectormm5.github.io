@@ -1,6 +1,6 @@
 import './splitRow.css'
 
-function aboutMe() {
+function SplitRow() {
 
     return (
         <div className="splitRow">
@@ -14,4 +14,4 @@ function aboutMe() {
 
 }
 
-export default aboutMe;
+export default SplitRow;
