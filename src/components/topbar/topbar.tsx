@@ -3,7 +3,7 @@
 
 import './topbar.css'
 
-function topbar() {
+function Topbar() {
 
   return (
     <header className="topbar">
@@ -19,6 +19,6 @@ function topbar() {
 
 }
 
-export default topbar;
+export default Topbar;
 
 
