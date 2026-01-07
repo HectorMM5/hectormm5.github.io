@@ -8,8 +8,8 @@ import TitleAndText from './components/titleAndText/TitleAndText.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Topbar />
-
-    <TitleAndText />
     <Header />
+    <TitleAndText />
+
   </StrictMode>,
 )
