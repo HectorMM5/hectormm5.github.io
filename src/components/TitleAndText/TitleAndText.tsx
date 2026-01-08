@@ -1,15 +1,15 @@
 import './TitleAndText.css'
 
-function authenticity() {
+function TitleAndText({title, text} : {title : string, text: string}) {
 
     return (
         <div className="authenticity">
-            <h2>Authenticity</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum fuga porro rerum, deserunt odit laboriosam necessitatibus laborum, alias natus quasi repellendus? Harum dolorem distinctio itaque ipsa.</h4>
+            <h2>{title}</h2>
+            <h4>{text}</h4>
         </div>
         
     )
 
 }
 
-export default authenticity;
+export default TitleAndText;

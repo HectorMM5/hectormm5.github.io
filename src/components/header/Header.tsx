@@ -1,11 +1,11 @@
 import './Header.css'
 
-function header() {
+function header({ title, subtitle } : { title : string, subtitle : string }) {
 
     return (
         <div className="headerBlock">
-            <h1>Hector Mendana Morales</h1>
-            <h3>A presentation</h3>
+            <h1>{title}</h1>
+            <h3>{subtitle}</h3>
         </div>
         
     )
