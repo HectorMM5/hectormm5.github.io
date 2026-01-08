@@ -4,11 +4,21 @@ import './index.css'
 import Header from './components/header/Header.tsx'
 import Topbar from './components/topbar/topbar.tsx'
 import TitleAndText from './components/TitleAndText/TitleAndText.tsx'
+import ButtonWrapper from './components/buttonWrapper/ButtonWrapper.tsx'
+import NavButton from './components/navButton/NavButton.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Topbar />
-    <Header />
+    <Header title='Hector Mendana Morales' subtitle='A presentation' />
+
+    <ButtonWrapper>
+      <NavButton name='Who I am'/> 
+      <NavButton name='Authenticity declaration'/> 
+      <NavButton name='Main projects'/> 
+      <NavButton name='Experience'/> 
+    </ButtonWrapper>
+
 
   </StrictMode>,
 )
