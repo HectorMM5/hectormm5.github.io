@@ -1,4 +1,4 @@
-import './splitRow.css'
+import './NavButton.css'
 
 function NavButton({ name }: { name: string }) {
 
