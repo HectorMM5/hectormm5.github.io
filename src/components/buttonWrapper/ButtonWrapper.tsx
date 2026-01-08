@@ -1,9 +1,9 @@
 import './ButtonWrapper.css'
 
-function ButtonWrapper() {
+function ButtonWrapper({ children }: { children : React.ReactNode }) {
 
     return (
-        <div className="ButtonWrapper"></div>
+        <div className="ButtonWrapper">{children}</div>
     )
 
 }
