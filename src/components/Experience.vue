@@ -105,7 +105,6 @@ export default {
   flex-direction: row;
   background-color: #2a2a2a;
   justify-content: space-between;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .title {

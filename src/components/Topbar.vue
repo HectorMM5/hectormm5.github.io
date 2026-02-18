@@ -22,7 +22,6 @@ export default {
   background-color: #2a2a2a;
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .topbar-content {
