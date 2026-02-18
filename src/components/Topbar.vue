@@ -19,16 +19,17 @@ export default {
 
 <style scoped>
 .topbar {
-  background-color: #333;
+  background-color: #2a2a2a;
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .topbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
