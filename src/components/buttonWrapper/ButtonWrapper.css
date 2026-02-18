@@ -1,7 +1,0 @@
-.ButtonWrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 2vh auto;
-    background-color: aqua;
-    justify-content: center;
-}
