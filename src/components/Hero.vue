@@ -26,7 +26,7 @@ export default {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  background-color: #333;
+  background-color: #2a2a2a;
 }
 
 .left-side {
