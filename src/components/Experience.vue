@@ -2,14 +2,16 @@
   <div class="experience">
     <div class="work-experience">
       <h1 class="title">Professional Experience</h1>
-      <ul class="job-list">
-        <li class="job-item" v-for="job in jobs" :key="job.company">
-          <h3 class="job-company">{{ job.company }}</h3>
-          <h4 class="job-role">{{ job.role }}</h4>
-          <p class="job-period">{{ job.period }}</p>
-          <ul class="job-highlights">
+
+      <ul class="card-list">
+        <li class="card" v-for="job in jobs" :key="job.company">
+          <h3 class="card-title">{{ job.company }}</h3>
+          <h4 class="card-subtitle">{{ job.role }}</h4>
+          <p class="card-period">{{ job.period }}</p>
+
+          <ul class="card-bullets">
             <li
-              class="job-highlight-item"
+              class="card-bullet"
               v-for="(h, index) in job.highlights"
               :key="job.company + '-' + index"
             >
@@ -19,14 +21,17 @@
         </li>
       </ul>
     </div>
+
     <div class="separator"></div>
+
     <div class="education">
       <h1 class="title">Education</h1>
-      <ul class="study-list">
-        <li class="study-item" v-for="study in studies" :key="study.school">
-          <h3 class="study-school">{{ study.school }}</h3>
-          <h4 class="study-studyName">{{ study.studyName }}</h4>
-          <p class="study-period">{{ study.period }}</p>
+
+      <ul class="card-list">
+        <li class="card" v-for="study in studies" :key="study.school">
+          <h3 class="card-title">{{ study.school }}</h3>
+          <h4 class="card-subtitle">{{ study.studyName }}</h4>
+          <p class="card-period">{{ study.period }}</p>
         </li>
       </ul>
     </div>
@@ -104,7 +109,7 @@ export default {
 }
 
 .title {
-  padding: 0 1rem;
+  padding: 0;
   margin-top: 0.75rem;
   margin-bottom: 0;
   color: white;
@@ -120,76 +125,50 @@ export default {
   width: 48%;
 }
 
-.job-list {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 1rem;
-}
-
-.job-item {
-  padding: 2rem;
-  background-color: #303030;
-  border-radius: 1rem;
-  list-style-type: none;
-}
-
-.job-company {
-  font-size: 2rem;
-  color: white;
-  margin: 0;
-}
-
-.job-role {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.job-period {
-  font-size: 1rem;
-  color: white;
-}
-
-.job-highlights {
-  font-size: 1rem;
-  color: white;
-}
-
 .education {
   width: 48%;
 }
 
-.study-list {
-  padding: 1rem;
+.card-list {
+  padding: 0;
   display: grid;
   grid-template-columns: auto;
   gap: 1rem;
 }
 
-.study-item {
+.card {
   padding: 2rem;
   background-color: #303030;
   border-radius: 1rem;
   list-style-type: none;
 }
 
-.study-school {
+.card-title {
   font-size: 2rem;
   color: white;
   margin: 0;
 }
 
-.study-studyName {
+.card-subtitle {
   font-size: 1.5rem;
   color: white;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.study-period {
+.card-period {
   font-size: 1rem;
   color: white;
+}
+
+.card-bullets {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.card-bullet {
+  margin: 0.25rem 0;
 }
 </style>
