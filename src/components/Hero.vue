@@ -9,7 +9,7 @@
     </div>
     <div class="right-side">
       <h3 class="contact">hmmoralesdev@gmail.com</h3>
-      <h3 class="GitHub">GitHub</h3>
+      <a href="https://github.com/HectorMM5" class="GitHub">GitHub</a>
     </div>
   </div>
 </template>
@@ -37,7 +37,6 @@ export default {
 
 .left-side h1 {
   display: block;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 4rem;
   font-weight: 1000;
   color: white;
@@ -45,14 +44,12 @@ export default {
 
 .left-side h3 {
   display: block;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   color: white;
 }
 
 .left-side h4 {
   display: block;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
   color: white;
 }
@@ -74,8 +71,12 @@ export default {
 
 .right-side h3 {
   display: block;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
+  color: white;
+}
+
+.GitHub {
+  text-decoration: none;
   color: white;
 }
 </style>
