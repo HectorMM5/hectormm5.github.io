@@ -101,8 +101,8 @@ export default {
 .experience {
   margin: 3% 3%;
   padding: 1rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 47.5% 5% 47.5%;
   background-color: #2a2a2a;
   justify-content: space-between;
 }
@@ -116,16 +116,17 @@ export default {
 
 .separator {
   width: 5px;
+  height: 90%;
   background-color: rgba(255, 255, 255, 0.15);
-  margin: 2rem 0;
+  margin: auto;
 }
 
 .work-experience {
-  width: 48%;
+  width: 100%;
 }
 
 .education {
-  width: 48%;
+  width: 100%;
 }
 
 .card-list {
