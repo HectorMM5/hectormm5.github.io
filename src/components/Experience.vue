@@ -171,4 +171,16 @@ export default {
 .card-bullet {
   margin: 0.25rem 0;
 }
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .separator {
+    width: 90%;
+    height: 5px;
+    margin: 1rem auto;
+  }
+}
 </style>
