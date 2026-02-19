@@ -53,4 +53,11 @@ export default {
 .topbar-nav a:hover {
   color: #ddd;
 }
+
+@media (max-width: 800px) {
+  /* hide navigation links on smaller widths */
+  .topbar-nav {
+    display: none;
+  }
+}
 </style>
