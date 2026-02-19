@@ -172,7 +172,8 @@ export default {
   margin: 0.25rem 0;
 }
 
-@media (max-width: 800px) {
+@media 
+(max-width: 800px) {
   .experience {
     grid-template-columns: 1fr;
   }
