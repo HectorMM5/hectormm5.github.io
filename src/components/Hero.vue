@@ -41,6 +41,10 @@ export default {
     height: 3px;
     margin: 1rem auto;
   }
+
+  .name {
+    font-size: 2rem;
+  }
 }
 
 .left-side {
@@ -49,7 +53,7 @@ export default {
   width: 100%;
 }
 
-.left-side h1 {
+.name {
   display: block;
   font-size: 4rem;
   font-weight: 1000;
