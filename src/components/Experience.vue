@@ -103,7 +103,7 @@ export default {
   padding: 1rem;
   display: grid;
   grid-template-columns: 47.5% 5% 47.5%;
-  background-color: #2a2a2a;
+  background-color: var(--color-bg);
   justify-content: space-between;
 }
 
@@ -138,33 +138,30 @@ export default {
 
 .card {
   padding: 2rem;
-  background-color: #303030;
+  background-color: var(--color-card);
   border-radius: 1rem;
   list-style-type: none;
+  color: var(--color-text);
 }
 
 .card-title {
   font-size: 2rem;
-  color: white;
   margin: 0;
 }
 
 .card-subtitle {
   font-size: 1.5rem;
-  color: white;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .card-period {
   font-size: 1rem;
-  color: white;
 }
 
 .card-bullets {
   margin: 0.75rem 0 0;
   padding-left: 1.25rem;
-  color: white;
   font-size: 1rem;
 }
 

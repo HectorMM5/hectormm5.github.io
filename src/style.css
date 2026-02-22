@@ -1,6 +1,21 @@
+:root {
+  --color-bg: #171a21;
+  --color-card: #1f242d;
+  --color-text: #ffffff;
+
+  --color-text-hover: #00ff15;
+
+  --color-separator: #fa0000;
+
+  --spacing-lg: 2rem;
+  --spacing-md: 1rem;
+
+  --border-radius: 1rem;
+}
+
 body {
   margin: 0;
-  background-color: #272727;
+  background-color: var(--color-bg);
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

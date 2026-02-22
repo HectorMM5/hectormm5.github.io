@@ -27,7 +27,7 @@ export default {
   display: grid;
   grid-template-columns: 60% 40%;
   flex-direction: row;
-  background-color: #2a2a2a;
+  background-color: var(--color-card);
 }
 
 @media 
@@ -53,23 +53,23 @@ export default {
   display: block;
   font-size: 4rem;
   font-weight: 1000;
-  color: white;
+  color: var(--color-text);
 }
 
 .left-side h3 {
   display: block;
   font-size: 2rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .left-side h4 {
   display: block;
   font-size: 1.5rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .left-side .separator {
-  border: solid rgb(255, 0, 0);
+  border: solid var(--color-separator);
   border-radius: 5px;
   width: 30%;
 }
@@ -86,11 +86,11 @@ export default {
 .right-side h3 {
   display: block;
   font-size: 1rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .GitHub {
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
 }
 </style>

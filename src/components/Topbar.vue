@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .topbar {
-  background-color: #2a2a2a;
+  background-color: var(--color-card);
   padding: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -33,7 +33,7 @@ export default {
 }
 
 .topbar-title {
-  color: white;
+  color: var(--color-text);
   margin: 0;
   font-size: 2.5rem;
 }
@@ -44,14 +44,14 @@ export default {
 }
 
 .topbar-nav a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   transition: color 0.3s;
   font-size: 1.5rem;
 }
 
 .topbar-nav a:hover {
-  color: #ddd;
+  color: var(--color-text-hover);
 }
 
 @media (max-width: 800px) {
