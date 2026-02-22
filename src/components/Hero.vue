@@ -68,7 +68,7 @@ export default {
   color: var(--color-text);
 }
 
-.left-side .separator {
+.separator {
   border: solid var(--color-separator);
   border-radius: 5px;
   width: 30%;
