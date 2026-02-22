@@ -1,11 +1,11 @@
 :root {
-  --color-bg: #171a21;
-  --color-card: #1f242d;
+  --color-bg: #0d0e13;
+  --color-card: #0f1116;
   --color-text: #ffffff;
 
   --color-text-hover: #00ff15;
 
-  --color-separator: #fa0000;
+  --color-separator: #BA2D0B;
 
   --spacing-lg: 2rem;
   --spacing-md: 1rem;
