@@ -117,7 +117,7 @@ export default {
 .separator {
   width: 5px;
   height: 90%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--color-separator);
   margin: auto;
 }
 
