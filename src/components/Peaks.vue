@@ -1,11 +1,10 @@
 <template>
   <svg
       class="peaks"
-      viewBox="0 0 960 540"
+      viewBox="0 400 960 140"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
     >
-      <rect x="0" y="0" width="960" height="540" fill="#BA2D0B"></rect>
       <path d="M0 422L96 410L192 442L288 426L384 439L480 444L576 406L672 433L768 447L864 430L960 433L960 541L864 541L768 541L672 541L576 541L480 541L384 541L288 541L192 541L96 541L0 541Z" fill="#3e5559"></path>
       <path d="M0 430L96 456L192 468L288 463L384 449L480 467L576 432L672 465L768 452L864 436L960 453L960 541L864 541L768 541L672 541L576 541L480 541L384 541L288 541L192 541L96 541L0 541Z" fill="#324349"></path>
       <path d="M0 487L96 452L192 460L288 477L384 460L480 456L576 474L672 484L768 466L864 452L960 474L960 541L864 541L768 541L672 541L576 541L480 541L384 541L288 541L192 541L96 541L0 541Z" fill="#273138"></path>
@@ -24,7 +23,7 @@ export default {
 <style scoped>
 .peaks {
   position: absolute;
-  top: -10vh;
+  bottom: 0;
   width: 100%;
   height: fit-content;
   z-index: 0;
