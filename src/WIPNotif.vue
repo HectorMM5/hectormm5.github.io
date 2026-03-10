@@ -20,7 +20,16 @@ export default {
   border-radius: 8px 8px 0 0;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 1000;
 }
+
+@media 
+(max-width: 800px) {
+  .wip-notification {
+    max-height: 10dvh;
+    font-size: 0.8rem;
+  }
+}
+
 </style>

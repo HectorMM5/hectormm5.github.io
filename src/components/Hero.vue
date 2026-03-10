@@ -24,38 +24,56 @@ export default {
 .hero {
   margin: 3% 3%;
   padding: 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 60% 40%;
   flex-direction: row;
-  background-color: #2a2a2a;
+  background-color: var(--color-card);
+}
+
+@media 
+(max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .separator {
+    width: 90%;
+    height: 3px;
+    margin: 1rem auto;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
 }
 
 .left-side {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
 }
 
-.left-side h1 {
+.name {
   display: block;
   font-size: 4rem;
   font-weight: 1000;
-  color: white;
+  color: var(--color-text);
 }
 
 .left-side h3 {
   display: block;
   font-size: 2rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .left-side h4 {
   display: block;
   font-size: 1.5rem;
-  color: white;
+  color: var(--color-text);
 }
 
-.left-side .separator {
-  border: solid rgb(255, 0, 0);
+.separator {
+  border: solid var(--color-separator);
   border-radius: 5px;
   width: 30%;
 }
@@ -64,7 +82,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 30%;
+  width: 100%;
   align-items: baseline;
   margin-top: auto;
 }
@@ -72,11 +90,11 @@ export default {
 .right-side h3 {
   display: block;
   font-size: 1rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .GitHub {
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
 }
 </style>
