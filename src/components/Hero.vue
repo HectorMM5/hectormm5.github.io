@@ -1,18 +1,25 @@
 <template>
   <div class="hero">
-    <div class="left-side">
+    <Peaks />
+
+    <div class="left-side"> 
       <h1 class="name">Hector Mendana Morales</h1>
       <h3>Computer Science @ NTNU</h3>
       <div class="separator"></div>
       <h3>Developer @ MAKE NTNU</h3>
       <h4>Java | Python | TypeScript | C#</h4>
     </div>
+
     <div class="right-side">
       <h3 class="contact">hmmoralesdev@gmail.com</h3>
       <a href="https://github.com/HectorMM5" class="GitHub">GitHub</a>
     </div>
   </div>
 </template>
+
+<script setup>
+import Peaks from './Peaks.vue';
+</script>
 
 <script>
 export default {
@@ -22,16 +29,26 @@ export default {
 
 <style scoped>
 .hero {
-  margin: 3% 3%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
   padding: 1rem;
   display: grid;
   grid-template-columns: 60% 40%;
-  flex-direction: row;
-  background-color: var(--color-card);
+  background-color: lime;
+  height: 85dvh;
+  width: 90dvw;
+  left: 0;
 }
 
-@media 
-(max-width: 800px) {
+.left-side,
+.right-side {
+  margin: 12.5% 0 0 3%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
   }
@@ -84,7 +101,7 @@ export default {
   height: 100%;
   width: 100%;
   align-items: baseline;
-  margin-top: auto;
+  margin-top: 65%;
 }
 
 .right-side h3 {
