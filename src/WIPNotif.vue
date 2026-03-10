@@ -22,7 +22,14 @@ export default {
   font-weight: 500;
   font-size: 1.5rem;
   z-index: 1000;
-
-  max-height: 10dvh;
 }
+
+@media 
+(max-width: 800px) {
+  .wip-notification {
+    max-height: 10dvh;
+    font-size: 0.8rem;
+  }
+}
+
 </style>
