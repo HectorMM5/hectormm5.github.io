@@ -35,7 +35,7 @@ export default {
   padding: 1rem;
   display: grid;
   grid-template-columns: 60% 40%;
-  background-color: lime;
+  background-color: var(--color-bg);
   height: 85dvh;
   width: 90dvw;
   left: 0;
@@ -90,7 +90,7 @@ export default {
 }
 
 .separator {
-  border: solid var(--color-separator);
+  border: solid var(--color-bg);
   border-radius: 5px;
   width: 30%;
 }
