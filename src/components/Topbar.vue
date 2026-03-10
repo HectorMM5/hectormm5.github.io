@@ -30,7 +30,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Topbar",
   data() {
@@ -39,35 +39,32 @@ export default {
     };
   },
   methods: {
-    toggleMenu,
-    closeMenu,
-    onResize,
-    onKeydown
-  },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  },
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  },
-
-  onResize() {
-    // If user goes back to desktop, ensure mobile menu is closed
-    if (window.innerWidth > 800 && this.isMenuOpen) {
+    closeMenu() {
       this.isMenuOpen = false;
-    }
-  },
+    },
 
-  onKeydown(e) {
-    if (e.key === "Escape" && this.isMenuOpen) this.closeMenu();
+    onResize() {
+      if (window.innerWidth > 800 && this.isMenuOpen) {
+        this.isMenuOpen = false;
+      }
+    },
+
+    onKeydown(e: KeyboardEvent) {
+      if (e.key === "Escape" && this.isMenuOpen) {
+        this.closeMenu();
+      }
+    },
   },
 
   mounted() {
     window.addEventListener("resize", this.onResize);
     window.addEventListener("keydown", this.onKeydown);
   },
+
   beforeUnmount() {
     window.removeEventListener("resize", this.onResize);
     window.removeEventListener("keydown", this.onKeydown);
