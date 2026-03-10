@@ -10,8 +10,7 @@ The site aims to showcase my projects, education, work-experience and technical 
 Clone repository, install dependencies and run:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
+git clone https://github.com/HectorMM5/hectormm5.github.io.git
 npm install
 npm run dev
 ```
